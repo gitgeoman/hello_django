@@ -31,7 +31,15 @@ def return_name(request, name: str = ''):
         template_name="mathematics/calculations.html",
         context={
             'text': f'hello {name}',
-            'text2': f'this is text2 '
+            'text2': f'this is text2 ',
+            'lista': [10,2, 'a', 'b'],
+            'tupla': ('x', 'y', 100),
+            'slownik': {'klucz':'wartosc'},
+            'zbior': {
+                "aaa":1,
+                "bbb":2,
+                "ccc":3
+            },
         }
     )
 
@@ -44,3 +52,4 @@ def calculator(request: HttpRequest, operation: str, a: int, b: int) -> HttpResp
     except KeyError:
         return HttpResponse(f'Nie poprawna operacja')
     return HttpResponse(f'{result}')
+

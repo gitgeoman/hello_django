@@ -21,5 +21,24 @@
 {{ text }}
 {{ text2 }}
 
+<p>{{lista}}</p>
+<p>{{tupla}}</p>
+<p>{{zbior}}</p>
+
+
+{% if lista.0 > 10 %}
+<p> to jest if {{lista}} </p>
+{% endif%}
+<ol>
+    {% for el in zbior %}
+    <li>  {{ el }}</li>
+    {% endfor %}
+</ol>
+
+
+<p>{{slownik}}</p>
+<p>{{slownik.klucz}}</p>
+
+
 </body>
 </html>
