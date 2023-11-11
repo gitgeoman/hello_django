@@ -20,7 +20,7 @@ operations = {
     'add': add,
     'sub': sub,
     'div': div,
-    'mul': mul
+    'mul': mul,
 }
 
 
