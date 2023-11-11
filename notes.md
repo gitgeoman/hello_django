@@ -51,7 +51,10 @@ def home(request, name): # request to http request - domyslny parametr funkcji
     return HttpResponse("hello world")
 
 def return_name(request, name):
-    return HttpResponse(f"hello {name}")
+    # przetwarzanie 
+    result = name
+    return HttpResponse(f"hello {result}")
 
 
 ```
+

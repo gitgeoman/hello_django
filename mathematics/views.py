@@ -2,10 +2,11 @@ from django.http import HttpResponse, HttpRequest
 from django.shortcuts import render
 
 from mathematics.services import AlgebraService
+from django.template.loader import render_to_string
 
-
-def home(request):  # request to http request - domyslny parametr funkcji
-    return HttpResponse("hello world")
+def hello(request):  # request to http request - domyslny parametr funkcji
+    rendered = render_to_string("mathematics/calculations.html", {})
+    return HttpResponse(rendered)
 
 
 def return_name(request, name):
