@@ -58,7 +58,9 @@ def return_name(request, name):
 
 ```
 
-1. utworzyć aplikacje blog
+1. projekt bp_monitor
+2. utworzyć aplikacje measurments
+
 2. utworyć servis BlogService - z metodą list (która zwróci listę tytułów postów)
 3. w nowej aplikacji trzeba utworzyć szablon, który wypisze te tytuly
 4. /blog/posts/<id>
